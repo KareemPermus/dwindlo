@@ -1,0 +1,50 @@
+[
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/timers",
+    "response_shape": [
+      {
+        "created_at": "string",
+        "duration_seconds": "int",
+        "end_time": "string|null",
+        "id": "int",
+        "status": "string",
+        "title": "string"
+      }
+    ],
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/timers/:id",
+    "response_shape": {
+      "created_at": "string",
+      "duration_seconds": "int",
+      "end_time": "string|null",
+      "id": "int",
+      "status": "string",
+      "title": "string"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/health",
+    "request_body": null,
+    "response_shape": {
+      "status": "string"
+    },
+    "sample_body": null,
+    "sample_params": null,
+    "success_status": 200
+  }
+]

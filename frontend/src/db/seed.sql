@@ -1,0 +1,3 @@
+INSERT INTO timers (slug, title, duration_seconds, status) VALUES ('timer-pomodoro', 'Pomodoro', 1500, 'idle') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO timers (slug, title, duration_seconds, status) VALUES ('timer-break', 'Short Break', 300, 'idle') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO timers (slug, title, duration_seconds, status) VALUES ('timer-long-break', 'Long Break', 900, 'idle') ON CONFLICT (slug) DO NOTHING;

@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS timers (
+  id SERIAL PRIMARY KEY,
+  title TEXT NOT NULL,
+  slug TEXT UNIQUE NOT NULL,
+  duration_seconds INTEGER NOT NULL,
+  end_time TIMESTAMPTZ,
+  status TEXT NOT NULL DEFAULT 'idle',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
